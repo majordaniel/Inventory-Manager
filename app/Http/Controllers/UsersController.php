@@ -63,19 +63,10 @@ class UsersController extends Controller
       $this->validate($request, [
         'name' => 'required|min:3|max:150',
         'email' => 'required|email|min:3|max:150|unique:users,email,'.$user_id, // <--- exclude current user from unique email validation
-        'password' => 'nullable|min:8|max:150',
       ]);
 
       // get user and save old password
       $user = User::find($user_id);
-      $old_password = $user->password;
-
-      // check if password was sent
-      if(!Input::has('password')) {
-        $user->password = $old_password;
-      } else {
-        $user->password = bcrypt($request->input('password'));
-      }
 
       // set attributes
       $user->name = $request->input('name');

@@ -252,14 +252,14 @@ return [
           ],
         ],
         [
-          'text' => 'About',
-          'icon' => 'info-circle',
-          'url' => '/about',
-        ],
-        [
           'text' => 'Settings',
           'icon' => 'cogs',
           'url' => '/settings',
+        ],
+        [
+          'text' => 'About',
+          'icon' => 'info-circle',
+          'url' => '/about',
         ],
     ],
 

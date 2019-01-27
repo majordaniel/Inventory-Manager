@@ -35,16 +35,6 @@
               </div>
             </div>
 
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="form-group">
-                  {{Form::label('password', 'Password')}}
-                  {{Form::password('password', ['class' => 'form-control', 'placeholder' => 'Password'])}}
-                  <small>Can be left empty to keep old password.</small>
-                </div>
-              </div>
-            </div>
-
             {{Form::hidden('_method', 'PUT')}}
 						{{ Form::submit('Update user', ['class' => 'pull-right btn btn-default']) }}
 
