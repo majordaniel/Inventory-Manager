@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 use App\Order;
+use App\Customer;
+use App\Product;
+use App\StorageLocation;
 
 use Illuminate\Http\Request;
 
@@ -27,6 +30,14 @@ class HomeController extends Controller
         // get recent orders
         $orders = Order::orderBy('id', 'DESC')->take(10)->get();
 
-        return view('home')->with('orders', $orders);
+        // get counts
+        $counts = [
+          'product_count' => Product::all()->count(),
+          'customer_count' => Customer::all()->count(),
+          'order_count' => Order::all()->count(),
+          'storage_location_count' => StorageLocation::all()->count()
+        ];
+
+        return view('home')->with('orders', $orders)->with('counts', $counts);
     }
 }
