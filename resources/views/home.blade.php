@@ -10,7 +10,6 @@
 
   <div class="row">
     <div class="col-lg-3 col-xs-6">
-      <!-- small box -->
       <div class="small-box bg-aqua">
         <div class="inner">
           <h3>{{$counts['order_count']}}</h3>
@@ -23,9 +22,7 @@
         <a href="/orders" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
       </div>
     </div>
-    <!-- ./col -->
     <div class="col-lg-3 col-xs-6">
-      <!-- small box -->
       <div class="small-box bg-green">
         <div class="inner">
           <h3>{{$counts['customer_count']}}</h3>
@@ -38,9 +35,7 @@
         <a href="/customers" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
       </div>
     </div>
-    <!-- ./col -->
     <div class="col-lg-3 col-xs-6">
-      <!-- small box -->
       <div class="small-box bg-yellow">
         <div class="inner">
           <h3>{{$counts['product_count']}}</h3>
@@ -53,9 +48,7 @@
         <a href="/products" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
       </div>
     </div>
-    <!-- ./col -->
     <div class="col-lg-3 col-xs-6">
-      <!-- small box -->
       <div class="small-box bg-red">
         <div class="inner">
           <h3>{{$counts['storage_location_count']}}</h3>
@@ -68,7 +61,6 @@
         <a href="/storage-locations" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
       </div>
     </div>
-    <!-- ./col -->
   </div>
 
   <div class="row">

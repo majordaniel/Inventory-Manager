@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\StorageLocation;
 use App\ProductStock;
+use App\Product;
 use Illuminate\Http\Request;
 
 class StorageLocationsController extends Controller
@@ -83,8 +84,20 @@ class StorageLocationsController extends Controller
           ['quantity', '>', 0],
         ])->get();
 
+        $total_value_unformatted = 0;
+
+        foreach($stocks as $stock) {
+          $product = Product::find($stock->product_id);
+
+          $product_value = $product->sales_price * $stock->quantity;
+
+          $total_value_unformatted = $total_value_unformatted + $product_value;
+        }
+
+        $total_value = number_format($total_value_unformatted, 2);
+
         // return view
-        return view('storage-locations.show')->with('location', $location)->with('stocks', $stocks);
+        return view('storage-locations.show')->with('location', $location)->with('stocks', $stocks)->with('total', $total_value);
     }
 
     /**

@@ -12,7 +12,7 @@
 			<div class="col-sm-3">
 				<div class="box box-danger">
 					<div class="box-header with-border">
-						<h3 class="box-title">Product location {{$location->name}}</h3>
+						<h3 class="box-title">Storage location {{$location->name}}</h3>
 					</div>
 					<div class="box-body">
 						<dl class="dl-vertical">
@@ -36,7 +36,7 @@
 			<div class="col-sm-9">
 				<div class="box box-danger">
 					<div class="box-header with-border">
-						<h3 class="box-title">Products at location {{$location->name}}</h3>
+						<h3 class="box-title">Products at location {{$location->name}} — Total value: €{{$total}}</h3>
 					</div>
 					<div class="box-body">
 						<table class="table" id="datatable">
