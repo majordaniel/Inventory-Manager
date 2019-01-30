@@ -20,14 +20,14 @@ Some of the key features of Inventory Manager:
 * Move products between locations in seconds
 * Check stock in and out per location
 * View which products every supplier supplies you
+* Add customers to your system
+* See the total value of the inventory per storage location
+* Manage the status of orders
+* Create orders, with products and assign them to customers
 
 Features that are currently being implemented:
 
-* See the total value of the inventory per storage location
 * Multiple roles within the application to manage your employees
-* Add customers to your system
-* Create orders, with products and assign them to customers
-* Manage the status of orders
 * Update stock automatically after creating an order
 
 ## 🚀 Quick setup
