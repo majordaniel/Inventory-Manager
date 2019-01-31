@@ -38,7 +38,7 @@
     <!-- Google Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
     <link rel="stylesheet" href="{{asset('/css/inventory-manager-public.css')}}">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="{{asset('favicon.ico')}}">
 </head>
 <body class="hold-transition fixed @yield('body_class')">
 
