@@ -48,12 +48,12 @@
 						<h3 class="box-title">Your company</h3>
 					</div>
 					<div class="box-body">
-						{{ Form::open() }}
+						{{ Form::open(['action' => 'SettingsController@updateCompanyInformation', 'method' => 'post']) }}
 							<div class="row">
 								<div class="col-sm-12">
 									<div class="form-group">
 										{{ Form::label('company_name', 'Company name') }}
-										{{ Form::text('company_name', get_setting('company_name'), ['class' => 'form-control', 'readonly']) }}
+										{{ Form::text('company_name', get_setting('company_name'), ['class' => 'form-control']) }}
 									</div>
 								</div>
 							</div>
@@ -62,13 +62,13 @@
                 <div class="col-sm-9">
                   <div class="form-group">
                     {{ Form::label('street', 'Street') }}
-                    {{ Form::text('street', get_setting('street'), ['class' => 'form-control', 'readonly']) }}
+                    {{ Form::text('street', get_setting('street'), ['class' => 'form-control']) }}
                   </div>
                 </div>
                 <div class="col-sm-3">
                   <div class="form-group">
                     {{ Form::label('house_number', 'House number') }}
-                    {{ Form::text('house_number', get_setting('house_number'), ['class' => 'form-control', 'readonly']) }}
+                    {{ Form::text('house_number', get_setting('house_number'), ['class' => 'form-control']) }}
                   </div>
                 </div>
               </div>
@@ -77,13 +77,13 @@
 								<div class="col-sm-6">
 									<div class="form-group">
 										{{ Form::label('contact_phone', 'Contact phone number') }}
-										{{ Form::text('contact_phone', get_setting('contact_phone'), ['class' => 'form-control', 'readonly']) }}
+										{{ Form::text('contact_phone', get_setting('contact_phone'), ['class' => 'form-control']) }}
 									</div>
 								</div>
                 <div class="col-sm-6">
                   <div class="form-group">
                     {{ Form::label('contact_email', 'Contact email address') }}
-                    {{ Form::email('contact_email', get_setting('contact_email'), ['class' => 'form-control', 'readonly']) }}
+                    {{ Form::email('contact_email', get_setting('contact_email'), ['class' => 'form-control']) }}
                   </div>
                 </div>
 							</div>
@@ -92,13 +92,13 @@
 								<div class="col-sm-6">
 									<div class="form-group">
 										{{ Form::label('state_province_county', 'State / Province / County') }}
-										{{ Form::text('state_province_county', get_setting('state_province_county'), ['class' => 'form-control', 'readonly']) }}
+										{{ Form::text('state_province_county', get_setting('state_province_county'), ['class' => 'form-control']) }}
 									</div>
 								</div>
                 <div class="col-sm-6">
                   <div class="form-group">
                     {{ Form::label('country', 'Country') }}
-                    {{ Form::email('country', get_setting('country'), ['class' => 'form-control', 'readonly']) }}
+                    {{ Form::text('country', get_setting('country'), ['class' => 'form-control']) }}
                   </div>
                 </div>
 							</div>
@@ -107,13 +107,13 @@
                 <div class="col-sm-12">
                   <div class="form-group">
                     {{ Form::label('postal', 'Postal / zip code') }}
-                    {{ Form::text('postal', get_setting('postal'), ['class' => 'form-control', 'readonly']) }}
+                    {{ Form::text('postal', get_setting('postal'), ['class' => 'form-control']) }}
                   </div>
                 </div>
               </div>
 
 
-							<a href="/settings/company/edit" class="btn btn-default pull-right">Edit</a>
+							{{ Form::submit('Save changes', ['class' => 'btn btn-default pull-right']) }}
 
 						{{ Form::close() }}
 					</div>

@@ -30,6 +30,8 @@ Route::get('/about', function () {
 Route::get('/settings', 'SettingsController@index')->middleware('auth');
 Route::get('/settings/edit', 'SettingsController@edit')->middleware('auth');
 Route::post('/settings/edit', 'SettingsController@update')->middleware('auth');
+Route::get('/settings/company/edit', 'SettingsController@editCompanyInformation')->middleware('auth');
+Route::post('/settings/company/edit', 'SettingsController@updateCompanyInformation')->middleware('auth');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
