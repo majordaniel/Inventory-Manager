@@ -123,11 +123,13 @@ return [
               'text' => 'New product',
               'icon' => 'plus',
               'url' => '/products/create',
+              'active' => ['/products/create']
             ],
             [
               'text' => 'View products',
               'icon' => 'search',
               'url' => '/products',
+              'active' => ['/products']
             ],
           ],
         ],
@@ -139,11 +141,13 @@ return [
               'text' => 'New category',
               'icon' => 'plus',
               'url' => '/product-categories/create',
+              'active' => ['/product-categories/create']
             ],
             [
               'text' => 'View categories',
               'icon' => 'search',
               'url' => '/product-categories',
+              'active' => ['/product-categories']
             ]
           ],
         ],
@@ -177,11 +181,13 @@ return [
               'text' => 'New storage location',
               'icon' => 'plus',
               'url' => '/storage-locations/create',
+              'active' => ['/storage-locations/create']
             ],
             [
               'text' => 'View storage locations',
               'icon' => 'search',
               'url' => '/storage-locations',
+              'active' => ['/storage-locations']
             ],
           ],
         ],
@@ -193,11 +199,13 @@ return [
               'text' => 'New supplier',
               'icon' => 'plus',
               'url' => '/suppliers/create',
+              'active' => ['/suppliers/create']
             ],
             [
               'text' => 'View suppliers',
               'icon' => 'search',
               'url' => '/suppliers',
+              'active' => ['/suppliers']
             ],
           ],
         ],
@@ -210,11 +218,13 @@ return [
               'text' => 'New order',
               'icon' => 'plus',
               'url' => '/orders/create',
+              'active' => ['/orders/create']
             ],
             [
               'text' => 'View orders',
               'icon' => 'search',
               'url' => '/orders',
+              'active' => ['/orders']
             ],
           ],
         ],
@@ -226,11 +236,13 @@ return [
               'text' => 'New customer',
               'icon' => 'plus',
               'url' => '/customers/create',
+              'active' => ['/customers/create']
             ],
             [
               'text' => 'View customers',
               'icon' => 'search',
               'url' => '/customers',
+              'active' => ['/customers']
             ],
           ],
         ],
@@ -243,11 +255,13 @@ return [
               'text' => 'New employee',
               'icon' => 'plus',
               'url' => '/users/create',
+              'active' => ['/users/create']
             ],
             [
               'text' => 'View employees',
               'icon' => 'search',
               'url' => '/users',
+              'active' => ['/users']
             ],
           ],
         ],
