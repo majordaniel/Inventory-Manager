@@ -23,6 +23,7 @@ class AppSettingsTableSeeder extends Seeder
           ['id' => 6, 'group' => 'company_info', 'name' => 'state_province_county', 'value' => 'undefined'],
           ['id' => 7, 'group' => 'company_info', 'name' => 'contact_email', 'value' => 'undefined'],
           ['id' => 8, 'group' => 'company_info', 'name' => 'contact_phone', 'value' => 'undefined'],
+          ['id' => 9, 'group' => 'sales', 'name' => 'currency', 'value' => '€']
         ];
 
         // insert

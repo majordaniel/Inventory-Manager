@@ -112,6 +112,15 @@
                 </div>
               </div>
 
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="form-group">
+                    {{ Form::label('currency', 'Store currency') }}
+                    {{ Form::text('currency', get_setting('currency'), ['class' => 'form-control', 'readonly']) }}
+                  </div>
+                </div>
+              </div>
+
 
 							<a href="/settings/company/edit" class="btn btn-default pull-right">Edit</a>
 

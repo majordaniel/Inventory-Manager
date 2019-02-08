@@ -60,7 +60,8 @@ class SettingsController extends Controller
 				'country' => 'required|min:3|max:150',
 				'contact_email' => 'required|min:3|max:150|email',
 				'contact_phone' => 'required|min:3|max:150',
-				'company_name' => 'required|min:3|max:150'
+				'company_name' => 'required|min:3|max:150',
+				'currency' => 'required|min:1|max:150',
 			]);
 
 			$indexes = [
@@ -71,7 +72,8 @@ class SettingsController extends Controller
 				'postal',
 				'state_province_county',
 				'contact_email',
-				'contact_phone'
+				'contact_phone',
+				'currency'
 			];
 
 			$values = [
@@ -82,7 +84,8 @@ class SettingsController extends Controller
 				$request->input('postal'),
 				$request->input('state_province_county'),
 				$request->input('contact_email'),
-				$request->input('contact_phone')
+				$request->input('contact_phone'),
+				$request->input('currency')
 			];
 
 			for($i = 0; $i < count($indexes); $i++) {

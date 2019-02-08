@@ -36,7 +36,7 @@
 			<div class="col-sm-9">
 				<div class="box box-danger">
 					<div class="box-header with-border">
-						<h3 class="box-title">Products at location {{$location->name}} — Total value: €{{$total}}</h3>
+						<h3 class="box-title">Products at location {{$location->name}} — Total value: {{ get_setting('currency') }}{{$total}}</h3>
 					</div>
 					<div class="box-body">
 						<table class="table" id="datatable">
@@ -57,8 +57,8 @@
 									<tr>
 										<td>{{$stock->product->id}}</td>
 										<td>{{$stock->product->name}}</td>
-										<td>{{$stock->product->sales_price}}</td>
-										<td>{{$stock->product->buy_price}}</td>
+										<td>{{ get_setting('currency') }}{{$stock->product->sales_price}}</td>
+										<td>{{ get_setting('currency') }}{{$stock->product->buy_price}}</td>
 										<td>
 											@if ($stock->product->instock == 1)
 												Yes

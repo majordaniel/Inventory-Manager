@@ -33,8 +33,8 @@
 									<tr>
 										<td>{{$product->id}}</td>
 										<td>{{$product->name}}</td>
-                    <td>{{$product->sales_price}}</td>
-                    <td>{{$product->buy_price}}</td>
+                    <td>{{ get_setting('currency') }}{{$product->sales_price}}</td>
+                    <td>{{ get_setting('currency') }}{{$product->buy_price}}</td>
                     <td>
                       @if ($product->instock == 1)
                         Yes

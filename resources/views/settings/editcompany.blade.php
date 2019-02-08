@@ -112,6 +112,15 @@
                 </div>
               </div>
 
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="form-group">
+                    {{ Form::label('currency', 'Store currency') }}
+                    {{Form::select('currency', currency_options(), null, ['id' => 'select2', 'class' => 'form-control', 'placeholder' => 'Store currency'])}}
+                  </div>
+                </div>
+              </div>
+
 
 							{{ Form::submit('Save changes', ['class' => 'btn btn-default pull-right']) }}
 
