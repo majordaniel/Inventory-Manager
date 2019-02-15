@@ -63,6 +63,8 @@
     </div>
   </div>
 
+  @include('includes.missing_company_settings_alert')
+
   <div class="row">
     <div class="col-sm-3">
       <div class="box box-danger">

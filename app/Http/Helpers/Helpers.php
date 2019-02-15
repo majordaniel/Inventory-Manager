@@ -23,3 +23,14 @@ if(! function_exists('currency_options')) {
 		];
 	}
 }
+
+if(! function_exists('company_name_set')) {
+	function company_name_set()
+	{
+		if(get_setting('company_name') == 'undefined' || get_setting('company_name') == null) {
+			return false;
+		}
+
+		return true;
+	}
+}
